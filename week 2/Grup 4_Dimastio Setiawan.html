@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth box-border m-0 p-0 font-sans">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimastio Portfolio</title>
+    <!-- AKU PAKENYA TAILWIND GAPAPA YA KAK :D -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                chillGrey: '#3b3b4f',
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+
+  <body>
+
+    <header id="main-header">
+      
+      <nav id="navbar"
+      class="fixed flex flex-wrap justify-evenly items-center top-0 z-10 w-[100vw] h-12 bg-orange-100 border-b-2 border-black
+      md:justify-around"
+      >
+        <h2 class="justify-self-start font-bold text-lg">dimcord</h2>
+        <div>
+            <a class="justify-self-end p-4 text-chillGrey hover:bg-chillGrey hover:text-orange-100 no-underline"
+             href="#projects">Projects</a>
+            <a class="justify-self-end p-4 text-chillGrey hover:bg-chillGrey hover:text-orange-100 no-underline"
+             href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div id="welcome-section"
+      class="flex flex-col justify-center items-center w-[100%] py-[40vh] pt-[25vh] md:py-[11%] bg-chillGrey text-orange-100">
+        <div class="flex flex-col justify-center items-center gap-4 text-center">
+            <img class="rounded-full" src="https://media.licdn.com/dms/image/D5603AQEpUCzRS5GULQ/profile-displayphoto-shrink_200_200/0/1707987456068?e=1723680000&v=beta&t=uhyG7OSqkpOjkQCpHYKImw3KEUJPm994YQGv2v4SFA4">
+            <h1 class="text-2xl font-bold">Dimastio Setiawan</h1>
+            <p><em>{ SMAN 24 Bandung && Camaba Tekkom UPI }</em></p>
+        </div>
+        <p class="mt-16">v <b>Scroll down</b> v</p>
+      </div>
+
+      <div class="block md:flex flex-col text-center bg-orange-100">
+        <div id="projects" class="p-6 text-chillGrey bg-orange-100 text-center ">
+            <h2 class="mb-8 text-2xl font-bold">Here are my projects</h2>
+            <div class="flex justify-center">
+                <div class="flex flex-col justify-center md:grid grid-cols-3 gap-8 w-[100%] max-w-[1280px] pb-8">
+                    <div class="project-tile">
+                        <a href="https://devpost.com/software/mandalika-apartment-complex" target="_blank"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/890/807/datas/medium.jpg"><figcaption>CADTable CADathon 2023</figcaption></a>
+                    </div>
+                    <div class="project-tile">
+                        <a href="https://devpost.com/software/automatic-flood-early-warning-system" target="_blank"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/710/020/datas/medium.png"><figcaption>Automatic Flood Early Warning System</figcaption></a>
+                    </div>
+                    <div class="project-tile">
+                        <a href="https://devpost.com/software/e-xchange" target="_blank"><img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/001/766/355/datas/medium.jpeg"><figcaption>e-Xchange</figcaption></a>
+                    </div>
+                </div>
+            </div>
+       </div>
+      </div>
+      <div class="flex flex-col items-center text-center bg-chillGrey text-orange-100">
+        <div id="contact"
+        class="flex flex-col items-center text-center py-8 w-[50%] h-[50%]">
+            <h2 class="text-2xl font-bold">Contacts</h2>
+            <p>You can contact me here:</p>
+            <div class="contact-buttons">
+                <a id="profile-link" target="_blank" href="https://g.dev/dimcord">Google</a>
+                <a id="profile-link" target="_blank" href="https://linkedin.com/in/dimcord">Linkedin</a>
+                <a id="profile-link" target="_blank" href="https://devpost.com/dimcord">Devpost</a>
+            </div>
+            <form id="contact-email">
+                <fieldset class="contact-form">
+                    <label for="email">Or contact me through email!</label>
+                        <div class="input-container">
+                        <input name="email" type="email" placeholder="example@example.com" required>
+                        <button type="submit">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+       </div>
+    </div>
+
+    </main>
+
+    <hr class="border-2 border-orange-100">
+
+    <footer class="flex flex-col justify-center text-center w-[100%] h-16 bg-chillGrey text-orange-100">
+      <h2>Dimcord @ <a href="https://dimcord.my.id/" class="bg-orange-100 text-chillGrey">dimcord.my.id</a></h2>
+    </footer>
+  </body>
+
+  <style>
+    
+    #projects {
+        animation: fade linear;
+        animation-timeline: view();
+    }
+    
+        .project-tile {
+            background-color: #3b3b4f;
+            width: 100%;
+            height: 110%;
+            }
+    
+                .project-tile:hover {
+                    background-color: #3b3b4f;
+                    transform: scale(1.1);
+                    transition-property: transform;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    transition-duration: 150ms;
+                }
+    
+                    .project-tile img {
+                        object-fit: cover;
+                        width: 100%;
+                    }
+    
+                    .project-tile figcaption {
+                        font-weight: bold;
+                        color: linen;
+                        padding: 2rem 1rem 0.5rem 1rem;
+                    }
+    
+        #contact {
+            animation: buttonFade linear;
+            animation-timeline: view();
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        #contact-email {
+            margin-top: 2rem;
+            width: 70%;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid linen;
+        }
+
+            label[for="email"] {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            .input-container {
+                display: flex;
+                gap: 1rem;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+                input {
+                    width: 100%;
+                    height: 2rem;
+                    margin-top: 1rem;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid linen;
+                    outline: none;
+                    color: linen;
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    color: black;
+                    background-color: linen;
+                    padding: 0 1rem;
+                }
+
+                button:hover {
+                    transform: scale(1.1);
+                    transition-property: transform;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    transition-duration: 150ms;
+                    cursor: pointer;
+                }
+    
+        #contact a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: linen;
+            color: #3b3b4f;
+        }
+        
+        #contact a:hover {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #3b3b4f;
+            color: linen;
+            border: 1px solid linen;
+            transform: scale(1.1);
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+
+    @media only screen and (max-width: 600px) {
+        #welcome-section .welcome-text {
+            text-align: center;
+            width: 50%;
+        }
+        .grid-container {
+            display: block;
+        }
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+        }
+        .project-tile figcaption {
+            padding-bottom: 2rem;
+        }
+        #contact-email {
+            display: none;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0%;
+            transform: translateX(20%);
+        }
+        30% {
+            opacity: 100%;
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes buttonFade {
+        from {
+            opacity: 0%;
+            transform: translateY(20%);
+        }
+        30% {
+            opacity: 100%;
+            transform: translateY(0%);
+        }
+    }
+  </style>
+</html>
