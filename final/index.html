@@ -8,9 +8,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="">
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+			  theme: {
+				extend: {
+				  colors: {
+					clifford: '#da373d',
+				  },
+				  backgroundImage: {
+					"ganciProsesor": "url('https://images.tokopedia.net/img/cache/700/VqbcmM/2024/6/26/64ceb00a-6157-4c44-912d-d30476a75d2e.jpg')",
+				  }
+				}
+			  }
+			}
+		  </script>
+		<style>
+			* {
+				scroll-behavior: smooth;
+			}
+		</style>
 	</head>
 	<body class="border-box">
-		<header class="fixed flex flex-col md:flex-row justify-around items-center pt-2 md:pt-0 w-full h-28 md:h-20 bg-green-100">
+		<header class="z-10 fixed flex flex-col md:flex-row justify-around items-center pt-2 md:pt-0 w-full h-28 md:h-20 bg-green-100">
 			<h1 class="text-2xl font-bold text-green-800"><a href="/">Dimas's Junkyard</a></h1>
 			<nav class="flex items-center justify-between gap-4">
 				<a href="index.html" class="p-8 bg-white text-green-800">Home</a>
@@ -20,20 +39,46 @@
 		</header>
 
 		<main class="pt-80">
-			<div class="flex justify-center items-center gap-16 w-full h-40 p-18">
-				<img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/6/26/64ceb00a-6157-4c44-912d-d30476a75d2e.jpg" 
-				alt="" class="rounded-xl size-80">
-				<h1 class="text-xl text-green-800">Beli kerajinan dari barang bekas di sini</h1>
+			<img class="absolute top-0 object-cover blur w-full max-h-[800px] z-[-10] opacity-[20%]"
+			src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/6/26/64ceb00a-6157-4c44-912d-d30476a75d2e.jpg" alt="">
+			<div class="flex flex-col justify-center items-center gap-16 w-full h-40 p-18 bg-grey-200">
+				<h1 class="text-5xl font-extrabold text-green-800">Beli kerajinan dari barang bekas di sini</h1>
+				<p class="w-72 text-center text-green-800">Beli kerajinan dan barang-barang bekas untuk mengurangi sampah elektronik</p>
+				<a class="p-4 rounded-full bg-green-800 font-bold text-white hover:scale-125" href="produk.html">Lihat Katalog</a>
 			</div>
-			<p class="mt-80">Lorem ipsum odor amet, consectetuer adipiscing elit. Odio felis senectus, morbi accumsan laoreet torquent tempor erat. Convallis taciti lacus sem turpis ante fermentum hac. Volutpat aenean sagittis nibh iaculis himenaeos. Vivamus congue conubia pellentesque massa primis scelerisque luctus. Risus suscipit sagittis faucibus nisl ad magna a inceptos semper. Semper pellentesque aptent curabitur orci porttitor fringilla, ante fringilla. Suscipit tempus primis tortor nostra porttitor sem mauris enim. Arcu integer suspendisse viverra, enim blandit nibh lacinia.
+			<div class="flex flex-col justify-center items-center gap-4 w-full h-40 p-18 mt-[700px] bg-grey-200">
+				<h2 class="text-xl font-bold text-green-800">Kurangi sampah elektronik di Indonesia.</h2>
+				<p class="w-[95%] text-center text-green-800">Daur ulang sampah elektronik merupakan langkah penting dalam mengelola limbah yang terus bertambah setiap tahunnya. Dengan mendaur ulang, kita dapat mengurangi jumlah sampah yang berakhir di tempat pembuangan akhir, yang sering kali tidak ramah lingkungan. Proses daur ulang ini juga membantu dalam menghemat sumber daya alam karena banyak material dari sampah elektronik, seperti tembaga, perak, dan emas, yang bisa dipulihkan dan digunakan kembali. Selain itu, daur ulang sampah elektronik juga mengurangi emisi gas rumah kaca karena menghindari proses produksi baru yang memerlukan energi besar. Oleh karena itu, sangat penting bagi kita semua untuk menyadari nilai dari sampah elektronik dan berpartisipasi aktif dalam program daur ulang untuk mendukung keberlanjutan lingkungan.</p>
+				<div class="flex w-[90%] justify-between items-center gap-4 mt-8">
+					<a href="produk.html" class="py-32 px-12 rounded-3xl bg-green-100 font-bold text-center text-green-800 hover:scale-105">
+						Gantungan Kunci Prosesor
+						<img class="size-56 mt-8"
+						src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/6/26/64ceb00a-6157-4c44-912d-d30476a75d2e.jpg" alt="">
+					</a>
+					<a href="produk.html" class="py-32 px-12 rounded-3xl bg-green-100 font-bold text-center text-green-800 hover:scale-105">
+						Gantungan Kunci Prosesor
+						<img class="size-56 mt-8"
+						src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/6/26/64ceb00a-6157-4c44-912d-d30476a75d2e.jpg" alt="">
+					</a>
+					<a href="produk.html" class="py-32 px-12 rounded-3xl bg-green-100 font-bold text-center text-green-800 hover:scale-105">
+						Gantungan Kunci Prosesor
+						<img class="size-56 mt-8"
+						src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/6/26/64ceb00a-6157-4c44-912d-d30476a75d2e.jpg" alt="">
+					</a>
+				</div>
+			</div>
 
-				Placerat curabitur laoreet nascetur eleifend efficitur lacus nunc. Blandit dolor malesuada duis proin donec. Vitae platea tempus himenaeos mollis luctus enim magna. Tellus tempor nostra sagittis maximus mattis, condimentum imperdiet. Sapien neque imperdiet nunc hendrerit rhoncus aliquet pretium. Libero eu ridiculus dictumst erat aptent. Habitant quis hac dis nostra a quisque. Pellentesque taciti aenean elementum tortor aliquam aptent ridiculus tempus. Non suspendisse senectus proin sodales adipiscing.
-				
-				Mus eros eros magna suscipit sem aliquet leo nunc. Pulvinar cubilia volutpat tristique natoque fermentum tempor nisi elementum donec! Conubia scelerisque etiam; ridiculus convallis ac tortor pulvinar felis habitasse. Ligula ut ex facilisis maximus faucibus. Placerat dapibus est posuere ac facilisi imperdiet dui quam duis. Semper potenti nulla ridiculus mollis penatibus luctus sit. Congue vulputate nec volutpat commodo integer tortor massa fames nascetur. Odio pulvinar auctor sociosqu ex praesent ex feugiat. Fames mus a facilisi id, eleifend dolor feugiat?
-				
-				Nunc aenean arcu lacus, lectus ipsum duis nascetur ornare. Turpis mi consectetur, odio convallis proin urna praesent? Nisl fusce commodo congue varius nam integer. Gravida curabitur elementum dignissim ridiculus mollis ac hendrerit enim. Nulla elit nisi gravida non adipiscing lacus maximus. Id lacinia nam neque nam quis?
-				
-				Quis quis hac quis pharetra litora neque mattis a. Varius tristique arcu pharetra dictum tellus consectetur netus. Felis ut elit ultrices turpis porta. Taciti duis ultrices posuere elit aliquet turpis nibh. Himenaeos ipsum habitant cubilia sed eleifend nec. Primis tortor pulvinar integer finibus bibendum. Mattis habitasse scelerisque vitae nam vel nibh felis.</p>
+			<div class="w-[90%] h-[30%] bg-green-100 rounded-3xl mt-[500px] mb-24 mx-auto p-24">
+				<p>Lorem ipsum odor amet, consectetuer adipiscing elit. Odio felis senectus, morbi accumsan laoreet torquent tempor erat. Convallis taciti lacus sem turpis ante fermentum hac. Volutpat aenean sagittis nibh iaculis himenaeos. Vivamus congue conubia pellentesque massa primis scelerisque luctus. Risus suscipit sagittis faucibus nisl ad magna a inceptos semper. Semper pellentesque aptent curabitur orci porttitor fringilla, ante fringilla. Suscipit tempus primis tortor nostra porttitor sem mauris enim. Arcu integer suspendisse viverra, enim blandit nibh lacinia.
+
+					Placerat curabitur laoreet nascetur eleifend efficitur lacus nunc. Blandit dolor malesuada duis proin donec. Vitae platea tempus himenaeos mollis luctus enim magna. Tellus tempor nostra sagittis maximus mattis, condimentum imperdiet. Sapien neque imperdiet nunc hendrerit rhoncus aliquet pretium. Libero eu ridiculus dictumst erat aptent. Habitant quis hac dis nostra a quisque. Pellentesque taciti aenean elementum tortor aliquam aptent ridiculus tempus. Non suspendisse senectus proin sodales adipiscing.
+					
+					Mus eros eros magna suscipit sem aliquet leo nunc. Pulvinar cubilia volutpat tristique natoque fermentum tempor nisi elementum donec! Conubia scelerisque etiam; ridiculus convallis ac tortor pulvinar felis habitasse. Ligula ut ex facilisis maximus faucibus. Placerat dapibus est posuere ac facilisi imperdiet dui quam duis. Semper potenti nulla ridiculus mollis penatibus luctus sit. Congue vulputate nec volutpat commodo integer tortor massa fames nascetur. Odio pulvinar auctor sociosqu ex praesent ex feugiat. Fames mus a facilisi id, eleifend dolor feugiat?
+					
+					Nunc aenean arcu lacus, lectus ipsum duis nascetur ornare. Turpis mi consectetur, odio convallis proin urna praesent? Nisl fusce commodo congue varius nam integer. Gravida curabitur elementum dignissim ridiculus mollis ac hendrerit enim. Nulla elit nisi gravida non adipiscing lacus maximus. Id lacinia nam neque nam quis?
+					
+					Quis quis hac quis pharetra litora neque mattis a.</p>
+			</div>
 		</main>
 		
 	</body>
